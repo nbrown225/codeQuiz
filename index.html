@@ -10,8 +10,82 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <title>Random Code Quiz</title>
   </head>
-  <body>
-    <header>
+
+    <body>
+      <header>
+        <div class="header">
+          <div>
+            <button class="button" id="score">Highscores</button>
+          </div>
+          <div>
+            <p id="timer">Time left</p>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div>
+          <section class="intro" id="intro">
+            <h1>
+              Welcome to the Coding Quiz
+            </h1>
+            <p>
+              Once you click start, you will have 60 seconds to answer the 
+              following 4 questions. Good Luck!
+            </p>
+            <button class="button" id="start-button">Start Quiz</button>
+        </div>
+      </section>
+  
+      <section class="question-box" id="question-box">
+        <div>
+          <div>
+            <h2 id="question-title">Ask the question</h2>
+            <ul>
+              <li><button class="chocies" id="option-a" value="a">Answer1</button></li>
+              <li><button class="chocies" id="option-b" value="b">Answer2</button></li>
+              <li><button class="chocies" id="option-c" value="c">Answer3</button></li>
+              <li><button class="chocies" id="option-d" value="d">Answer4</button></li>
+            </ul>
+            <div>
+  
+            <div id="check">
+                <p>Correct or Wrong</p>
+        </div>
+      </section>
+  
+      <section class="submit" id="submit">
+        <div>
+          <h2 id="finish">All Done!</h2>
+          <p id="final-score">Your final score is:</p>
+          <p>Enter initials
+            <input id="inital">
+            <button class="button" id="submit-button"></button> 
+          </p>
+        </div>
+      </section>
+        <div class="highscore" id="highscore">
+            <h2>High Scores</h2>
+            <div id="score-record"><p>Your Record</p></div><br><br>
+            <div>
+              <button class= "button" id="back">Go Back</button>
+              <button class="button" id="clear">Clear Highscores</button>
+            </div>
+         </div>
+       </section>
+    </div>
+   </main>
+   <footer>
+  
+   </footer>
+  
+    <!-- Link JS -->
+    <script src="./assets/js/script.js"></script>
+    <!-- Materialize -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  </body>
+  <!-- 
+        <header>
       <div class="container" id="header">
         <div id="score-box">
           <button class="btn" id="score">SCORES</button>
@@ -41,19 +115,14 @@
             <h2 class="question-title" id="question-title">
               QUESTION GOES HERE!
             </h2>
-            <ul class="answer-box" id="answer-box">
-              <li><button class="btn choices" id="answer-a" value="a">Answer A</button></li>
-              <li><button class="btn choices" id="answer-c" value="b">Answer B</button></li>
-              <li><button class="btn choices" id="answer-c" value="c">Answer C</button></li>
-              <li><button class="btn choices" id="answer-d" value="d">Answer D</button></li>
-            </ul>
+
+              <button class="chocies" id="answer1" value="a">Answer1</button>
+              <button class="chocies" id="answer2" value="b">Answer2</button>
+              <button class="chocies" id="answer3" value="c">Answer3</button>
+              <button class="chocies" id="answer4" value="d">Answer4</button>
+            
           </div>
         </div>
       </div>
     
-    <!-- Link JS -->
-    <script src="./assets/js/script.js"></script>
-    <!-- Materialize -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-  </body>
+   -->
