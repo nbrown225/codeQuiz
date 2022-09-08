@@ -12,71 +12,42 @@
   </head>
 
     <body>
-      <header>
-        <div class="header">
-          <div>
-            <button class="button" id="score">Highscores</button>
+      <header class=" center">
+        <div class="row">
+          <div class="s6 left" id="timer-box">
+            <p id="timer">TIME: </p>
           </div>
-          <div>
-            <p id="timer">Time left</p>
+          <div class="s6 right">
+            <p id="score">SCORE:</p>
           </div>
         </div>
       </header>
+
       <main>
-        <div>
-          <section class="intro" id="intro">
-            <h1>
-              Welcome to the Coding Quiz
-            </h1>
-            <p>
-              Once you click start, you will have 60 seconds to answer the 
-              following 4 questions. Good Luck!
-            </p>
-            <button class="button" id="start-button">Start Quiz</button>
-        </div>
-      </section>
-  
-      <section class="question-box" id="question-box">
-        <div>
-          <div>
-            <h2 id="question-title">Ask the question</h2>
-            <ul>
-              <li><button class="chocies" id="option-a" value="a">Answer1</button></li>
-              <li><button class="chocies" id="option-b" value="b">Answer2</button></li>
-              <li><button class="chocies" id="option-c" value="c">Answer3</button></li>
-              <li><button class="chocies" id="option-d" value="d">Answer4</button></li>
-            </ul>
-            <div>
-  
-            <div id="check">
-                <p>Correct or Wrong</p>
-        </div>
-      </section>
-  
-      <section class="submit" id="submit">
-        <div>
-          <h2 id="finish">All Done!</h2>
-          <p id="final-score">Your final score is:</p>
-          <p>Enter initials
-            <input id="inital">
-            <button class="button" id="submit-button"></button> 
-          </p>
-        </div>
-      </section>
-        <div class="highscore" id="highscore">
-            <h2>High Scores</h2>
-            <div id="score-record"><p>Your Record</p></div><br><br>
-            <div>
-              <button class= "button" id="back">Go Back</button>
-              <button class="button" id="clear">Clear Highscores</button>
+        <div class="card center">
+            <div class="intro" id="intro-box">
+              <h1>
+                Code Quiz
+              </h1>
+              <p class="intro-p">
+                Click start to begin the quiz!
+              </p>
+              <button class="btn" id="start-button">Start Quiz</button>
             </div>
-         </div>
-       </section>
-    </div>
-   </main>
-   <footer>
-  
-   </footer>
+        </div>
+          <div class="card center">
+            <div class="question-box" id="question-box">
+              <h2 class="question-title" id="question-title">
+                Your question here!
+              </h2>
+              <ul class="row">
+                <li class="col s6"><button class="chocies" id="option-a" value="a">Answer1</button></li>
+                <li class="col s6"><button class="chocies" id="option-b" value="b">Answer2</button></li>
+                <li class="col s6"><button class="chocies" id="option-c" value="c">Answer3</button></li>
+                <li class="col s6"><button class="chocies" id="option-d" value="d">Answer4</button></li>
+              </ul>
+            </div>
+          </div>  
   
     <!-- Link JS -->
     <script src="./assets/js/script.js"></script>
@@ -84,45 +55,4 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
   </body>
-  <!-- 
-        <header>
-      <div class="container" id="header">
-        <div id="score-box">
-          <button class="btn" id="score">SCORES</button>
-        </div>
-        <div id="timer-box">
-          <p class="" id="timer">TIME: </p>
-        </div>
-      </div>
-    </header>
-
-      <div class="container center" id="intro-box">
-        <div class="card">
-          <div class="card-content">
-            <h1 id="quiz-title">
-              CODE QUIZ
-            </h1>
-            <p id="p-intro">
-              CLICK START TO BEGIN THE QUIZ
-            </p>
-            <button class="btn" id="start">START</button>
-          </div>
-        </div>
-      </div>
-      <div class="container center" id="question-box">
-        <div class="card blue">
-          <div class="card-content">
-            <h2 class="question-title" id="question-title">
-              QUESTION GOES HERE!
-            </h2>
-
-              <button class="chocies" id="answer1" value="a">Answer1</button>
-              <button class="chocies" id="answer2" value="b">Answer2</button>
-              <button class="chocies" id="answer3" value="c">Answer3</button>
-              <button class="chocies" id="answer4" value="d">Answer4</button>
-            
-          </div>
-        </div>
-      </div>
-    
-   -->
+</html>

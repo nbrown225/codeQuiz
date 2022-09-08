@@ -1,5 +1,5 @@
 // ------------ LINK DOM ------------------------
-var intro = document.querySelector("#intro");
+var intro = document.querySelector("#intro-box");
 var start = document.querySelector("#start-button");
 
 var optionNumber = 0;
