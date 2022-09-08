@@ -1,0 +1,21 @@
+body{
+    background-color: aliceblue;
+}
+
+#header{
+    margin-top: 1vh; 
+}
+
+#timer{
+
+}
+
+#intro-box{
+    margin-top: 15vh;
+}
+
+h1,
+#p-intro{
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}

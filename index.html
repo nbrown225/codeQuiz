@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--  Link CSS  -->
+    <link rel="stylesheet" type="text/css" href="./Assets/css/style.css" />
+    <!--  Materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Random Code Quiz</title>
+  </head>
+  <body>
+    <header>
+      <div class="container" id="header">
+        <div id="score-box">
+          <button class="btn" id="score">SCORES</button>
+        </div>
+        <div id="timer-box">
+          <p class="" id="timer">TIME: </p>
+        </div>
+      </div>
+    </header>
+
+      <div class="container center" id="intro-box">
+        <div class="card">
+          <div class="card-content">
+            <h1>
+              CODE QUIZ
+            </h1>
+            <p id="p-intro">
+              CLICK START TO BEGIN THE QUIZ
+            </p>
+            <button class="btn" id="start">START</button>
+          </div>
+        </div>
+      </div>
+      <div class="container center" id="question-box">
+        <div class="card blue">
+          <div class="card-content">
+            <h2 class="question-title" id="question-title">
+              QUESTION GOES HERE!
+            </h2>
+            <ul class="answer-box" id="answer-box">
+              <li><button class="btn choices" id="answer-a" value="a">Answer A</button></li>
+              <li><button class="btn choices" id="answer-c" value="b">Answer B</button></li>
+              <li><button class="btn choices" id="answer-c" value="c">Answer C</button></li>
+              <li><button class="btn choices" id="answer-d" value="d">Answer D</button></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+    <!-- Link JS -->
+    <script src="js\script.js"></script>
+    <!-- Materialize -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  </body>
